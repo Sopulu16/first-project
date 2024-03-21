@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-image: url(images/pexels-binyamin-mellish-186077.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-color: rgba(8, 8, 8, 0.575);
+}
+.banner-child{
+    z-index: 20000;
+}
+.banner-child h1{
+  width: 30ch;  
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 3rem;
+}
+.banner-child p{
+    width: 50ch;
+    color: pink;
+    text-align: center;
+    margin: 0 50px;
+    font-family: algerian;
+    padding-bottom:50px ;
+}
+.banner-child button{
+    border-color: orange;
+    background: none;
+    outline: none;
+     padding: 10px 20px;
+     margin-left: 180px;
+     border-radius: 20px;
+     
+}
+.banner-child button:hover{
+    background-color: orange;
+    color: white;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out 
+    ;   
+
+}
+.title{
+    text-transform: capitalize;
+    color: blue;
+    font-family: sans-serif;
+    padding-bottom:10px ;
+    text-align: center;
+    margin-top: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+.container .card img{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.container .card{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 2px 5px gray;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+.container .card h1{
+    color: tomato;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.container .card:hover{
+    background-color:gray ;
+}
